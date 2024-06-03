@@ -23,7 +23,7 @@ public class Main {
     }
 
     // make sure all data entered the ArrayList
-    //System.out.println(totalScore);
+    System.out.println(totalScore);
     System.out.println(totalScore.size() + " students took the exam");
 
     int total = 0;
@@ -34,6 +34,16 @@ public class Main {
     double average = (double)total/totalScore.size();
 
     System.out.println("average: " + average);
+
+    int min = Integer.MAX_VALUE;
+    for(int pointmin: totalScore){
+      if(min > pointmin){
+        min = pointmin;
+      }
+    }
+
+    System.out.println(min);
+    
   }
 
 }
