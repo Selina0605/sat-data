@@ -36,14 +36,22 @@ public class Main {
     System.out.println("average: " + average);
 
     int min = Integer.MAX_VALUE;
-    for(int pointmin: totalScore){
-      if(min > pointmin){
-        min = pointmin;
+    for(int pointMin: totalScore){
+      if(min > pointMin){
+        min = pointMin;
       }
     }
 
-    System.out.println(min);
-    
+    System.out.println("The minimum score is " + min);
+
+    int max = Integer.MIN_VALUE;
+    for(int pointMax: totalScore){
+      if(max < pointMax){
+        max = pointMax;
+      }
+    }
+
+    System.out.println("The minimum score is " + max);   
   }
 
 }
